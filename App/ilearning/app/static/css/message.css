@@ -1,0 +1,9 @@
+.message-content {
+    color: white;
+}
+
+
+.message-content h3{
+    display: inline-block;
+    padding: 15px;
+}

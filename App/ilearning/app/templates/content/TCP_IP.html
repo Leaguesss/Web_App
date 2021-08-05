@@ -1,0 +1,143 @@
+<link rel="stylesheet" type="text/css" href="css/content.css">
+<main id = "main">
+<p>
+    <div class="content_page">
+        <div class="title">
+            <div class="picture" style="background: url(img/background2.jpg);
+            background-size: 100% 100%;
+            height: 300px;
+            text-align: center;"></div>
+            <div class="container">
+                <h1>TCP And IP</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainBox">
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/intro.svg" width="128" height="96" alt="introduction icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Introdunction</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <p align="left">TCP/IP stands for Transmission Control Protocol / Internet Protocol. It defines how electronic devices (like computers) should be connected over the Internet, and how data should be transmitted between them.</p>
+                    </br>
+                    <h3>TCP - Transmission Control Protocol</h3>
+                    <p align="left">TCP is responsible for breaking data down into small packets before they can be sent over a network, and for assembling the packets again when they arrive.</p>
+                    </br>
+                    <h3>IP - Internet Protocol</h3>
+                    <p align="left">IP takes care of the communication between computers. It is responsible for addressing, sending and receiving the data packets over the Internet.</p>
+                    </br>
+                </div>
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/learning.svg" width="128" height="96" alt="learning icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Learning</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <h3>Thinking Space:</h3>
+                    </br>
+                    <p align="left">In info1112, there will be an assignment that uses python to handle the connection and dialogue between the browser and the client. One basic example will be shown below to help you get a better idea of it.</p>
+                </div>
+                <div class="sentenses">
+                    <h3>Advantage:</h3>
+                    <ul>
+                        <li>It can solve networking problems effectively.</li>
+                        <li>It is interoperable and commutable, for instance, it allows cross-platform communications among networks that have different types.</li>
+                        <li>It is an open source. Everyone can use it.</li>
+                        <li>It is a scalable, client-server architecture. This allows networks to be added without disrupting the current services.</li>
+                    </ul>
+                </div>
+                <div class="sentenses">
+                    <h3>Code Example:</h3></br>
+                    <h4>Server:</h4></br>
+                    <div class="Code">
+                        <p align="left">import socket</p>
+                        <p align="left">HOST = '127.0.0.1'</p>
+                        <p align="left">PORT = 65432</p>
+                        <p align="left">with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:</p>
+                        <pre><p align="left">&#9;s.bind((HOST, PORT))</p></pre>
+                        <pre><p align="left">&#9;s.listen()</p></pre>
+                        <pre><p align="left">&#9;conn, addr = s.accept()</p></pre>
+                        <pre><p align="left">&#9;with conn:</p></pre>
+                        <pre><p align="left">&#9;&#9;print('Connected by', addr)</p></pre>
+                        <pre><p align="left">&#9;&#9;while True:</p></pre>
+                        <pre><p align="left">&#9;&#9;&#9;data = conn.recv(1024)</p></pre>
+                        <pre><p align="left">&#9;&#9;&#9;if not data:</p></pre>
+                        <pre><p align="left">&#9;&#9;&#9;&#9;break</p></pre>
+                    </div>
+                    <p align="left">The arguments passed to socket() specify the address family and socket type. <strong>AF_INET</strong> is the Internet address family for IPv4. <strong>SOCK_STREAM</strong> is the socket type for TCP, the protocol that will be used to transport our messages in the network.</p>
+                    </br></br>
+                    <p align="left"><strong>bind()</strong> is used to associate the socket with a specific network interface and port number:</p>
+                    <div class="Code">
+                        <p align="left">with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:</p>
+                        <pre><p align="left">&#9;pass  # Use the socket object without calling s.close().</p></pre>
+                    </div>
+                    </br></br>
+                    <p align="left"><strong>socket.socket()</strong>creates a socket object that supports the context manager type, so you can use it in a with statement:</p>
+                    <div class="Code">
+                        <p align="left">s.listen()</p>
+                        <p align="left">conn, addr = s.accept()</p>
+                    </div>
+                    <p align="left"><strong>listen()</strong> enables a server to accept() connections. It makes it a “listening” socket.</p>
+                    </br></br></br>
+                    <h4>Client:</h4></br>
+                    <div class="Code">
+                        <p align="left">·#!/usr/bin/env python3</p>
+                        <p align="left">import socket</p></br>
+                        <p align="left">HOST = '127.0.0.1'  # The server's hostname or IP address</p>
+                        <p align="left">PORT = 65432    ·# The port used by the server</p></br>
+                        <p align="left">with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:</p>
+                        <pre><p align="left">&#9;s.connect((HOST, PORT))</p></pre>
+                        <pre><p align="left">&#9;s.sendall(b'Hello, world')</p></pre>
+                        <pre><p align="left">&#9;data = s.recv(1024)</p></br></pre>
+                        <p align="left">print('Received', repr(data))</p>
+                    </div>
+                    <p align="left">The client part is much easier than the server one, which only creates a socket object, connects to the server and send messages.</p> 
+                    <p align="left"> <strong>s.sendall()</strong> is to send client messages.</p>
+                    <p align="left"> <strong>s.recv()</strong> is to read the server’s reply and then prints it.</p>
+                    </br></br>
+                </div>
+                <div class="sentenses">
+                    <h3>Some websites may helpful to you:</h3>
+                    </br>
+                    <a href="https://www.redbooks.ibm.com/redbooks/pdfs/gg243376.pdf">https://www.redbooks.ibm.com/redbooks/pdfs/gg243376.pdf</a></br>
+                    <a href="https://www.javatpoint.com/computer-network-tcp-ip-model ">https://www.javatpoint.com/computer-network-tcp-ip-model </a></br>
+                    </br>
+                </div>
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/reference.svg" width="128" height="96" alt="reference icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Reference</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/website/web_tcpip.asp.html">http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/website/web_tcpip.asp.html</a></br>
+                    <a href="https://realpython.com/python-sockets/">https://realpython.com/python-sockets/</a></br>
+                    <a href="https://www.tutorialspoint.com/Advantages-and-Disadvantages-of-the-TCP-IP-Model">https://www.tutorialspoint.com/Advantages-and-Disadvantages-of-the-TCP-IP-Model</a></br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="message-content">
+            <form id="sendmessage" action="" method="post">  
+                <div class="field">
+                    <h2>Comment:</h2> <input type="text" name = "comment" style="width:500px;height:30px;font-size:14pt;margin-bottom:10px;">
+                    <button type="submit" style="width:300px;height:30px;font-size:14pt;">Send!</button>
+                </div> 
+            </form>
+    
+            <p>${comment}</p>
+                
+        </div>
+        </center>
+</p>
+</main>

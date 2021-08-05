@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="css/message.css">
+
+<center>
+
+    <div id="div1" style="color: white;">
+        <form id="sendmessage" action="" method="post">  
+
+            <div class="field"><h2>
+                Please enter the username you want to contact: </h2><input type="text" name = "username" style="width:200px;height:30px;font-size:14pt;">
+            
+            </div>
+            <div class="field">
+    
+                <h2>Please enter the message:</h2> <input type="text" name = "message" style="width:500px;height:30px;font-size:14pt;margin-bottom:10px;">
+    
+            </div>
+            
+            <button type="submit" style="width:300px;height:30px;font-size:14pt;">Send!</button>  
+        </form>
+    </div>
+    <div style="overflow: auto;">
+    
+        <h2 style="color: white;"> Here are list of messages you have received: </h2>
+        <div class = "message-content"> ${content} </div>
+    
+        </div>
+
+</center>
+
+
+
+<script src="js/message.js"></script>

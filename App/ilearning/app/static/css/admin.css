@@ -1,0 +1,53 @@
+
+/* This is a CSS comment */
+
+#profile-title{
+    text-align: center;
+    color: white;
+}
+
+.profile-header {
+    padding: 15px;
+    /* background: #1abc9c; */
+    color: white;
+}
+
+/* prfile-name */
+
+
+     
+ button {
+    background-color: rgba(0, 136, 169, 1);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+form * {
+    padding-top: 10px;
+}
+
+.users {
+    color: white;
+  }
+  
+  
+.users h3{
+    padding: 15px;
+    display: inline;
+  }
+  
+.users li{
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 10px;
+}

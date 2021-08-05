@@ -1,0 +1,50 @@
+<main id = "main">
+
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+
+
+<h1 id = "profile-title"><br>This is Admin Portal | Weclome ${name}!</br></h1>
+
+
+
+
+
+<center>
+
+    <div class="profile-header">
+        <div class="container details">
+            <div>
+                <h1> All Users</h1>
+                <br>
+                <form action = "/add_user" method="post" class = "add_user">
+                    <div class="field">
+                        <input type="text" placeholder="Username" name = "new_name" pattern=".{5,15}" required title="5 to 15 characters">
+                    </div>
+
+                    <div class="field">
+                        <input type="email" placeholder="Email Address" name = "new_email" required>
+                    </div>
+        
+                    <div class="field">
+                        <input type="password" placeholder="Password" name = "new_password" pattern=".{8,25}" required title="8 to 25 characters" onkeyup='check();'>
+                    </div>
+                    <button type="submit" value="Add User">Add User</button>
+                </form>
+                <!-- Users -->
+                <br>
+                </br>
+
+                <form action = "/mute" method="POST">
+                    <div class = "users" name = "users"> ${allusers} </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</center>
+
+
+<script src="js/admin.js"></script>
+
+
+</main>

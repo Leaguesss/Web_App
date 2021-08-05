@@ -1,0 +1,105 @@
+<link rel="stylesheet" type="text/css" href="css/content.css">
+<main id = "main">
+<p>
+    <div class="content_page">
+        <div class="title">
+            <div class="picture" style="background: url(img/background2.jpg);
+            background-size: 100% 100%;
+            height: 300px;
+            text-align: center;"></div>
+            <div class="container">
+                <h1>HTTP</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainBox">
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/intro.svg" width="128" height="96" alt="introduction icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Introdunction</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <p align="left">HTTP stands for Hyper Text Transfer Protocol.</p>
+                    </br>
+                    <p align="left">Communication between <strong>client</strong> computers and web <strong>servers</strong> is done by sending HTTP Requests and receiving HTTP Responses.</p>
+                    </br>
+                </div>
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/learning.svg" width="128" height="96" alt="learning icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Learning</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <h3>List of HTTP status codes:</h3>
+                    <ul>
+                        <li>1xx informational response – the request was received, continuing process</li>
+                        <li>2xx successful – the request was successfully received, understood, and accepted</li>
+                        <li>3xx redirection – further action needs to be taken in order to complete the request</li>
+                        <li>4xx client error – the request contains bad syntax or cannot be fulfilled</li>
+                        <li>5xx server error – the server failed to fulfil an apparently valid request</li>
+                    </ul>
+                </div>
+                <div class="sentenses">
+                    <h3>Thinking Space:</h3>
+                    </br>
+                    <p align="left">We will learn meet HTTP knowledge in info1112 at first time. The basic idea is that the server will return corresponding file whatever it is an HTML page, a CSS file or so on when the browser requests any type of the file. In this course, you are going to understand how http works and try to figure out how to use them programming via practiced by python.</p></br></br>
+                    <h3>Advantage about using HTTP language:</h3>
+                    </br>
+                    <h4>1. Addressing</h4>
+                    <p align="left">HTTP takes a method to assign IP address with some names, which can be recognized easily in the World Wide Web. Compared to the standard procedure of IP address with a series of numbers, this method called advanced scheme of addressing can easily engage with the internet.</p></br>
+                    <h4>2. Flexibility</h4>
+                    <p align="left">HTTP has the capability to download extensions or plugins and display the relevant data, such as Flash players and Acrobat reader.</p></br>
+                    <h4>3. Security</h4>
+                    <p align="left">Each file downloaded via HTTP will be connected independently and as the file downloaded completely, the link will be disconnected at the same time. Therefore, the probability of being intercepted during transmission is greatly reduced. </p></br>
+                    <h4>4. Accessibility</h4>
+                    <p align="left">All the pages will be stored in the internet caches, which means that once the page is visited, the next time visiting will be quickly shown without loading the whole page twice.</p></br></br>
+                    <h3>Example:</h3>
+                    </br>
+                    <p align="left">HTTP Server: (.js)</p>
+                    <p align="left">HTTP Client: (nc/ cURL/ Web Browsers)</p>
+                </div>
+                <div class="sentenses">
+                    <h3>Some websites may helpful to you:</h3>
+                    </br>
+                    <a href="https://www.tutorialspoint.com/http/index.html">https://www.tutorialspoint.com/http/index.html</a></br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication">https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication</a></br>
+                    </br>
+                </div>
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/reference.svg" width="128" height="96" alt="reference icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Reference</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <a href="https://www.w3schools.com/whatis/whatis_http.asp">https://www.w3schools.com/whatis/whatis_http.asp</a></br>
+                    <a href="https://cs.lmu.edu/~ray/notes/httpprogramming">https://cs.lmu.edu/~ray/notes/httpprogramming</a></br>
+                    <a href="https://www.hitechwhizz.com/2020/08/5-advantages-and-disadvant">https://www.hitechwhizz.com/2020/08/5-advantages-and-disadvant</a></br>
+                    <a href="ages-drawbacks-benefits-of-http.html">ages-drawbacks-benefits-of-http.html</a></br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="message-content">
+            <form id="sendmessage" action="" method="post">  
+                <div class="field">
+                    <h2>Comment:</h2> <input type="text" name = "comment" style="width:500px;height:30px;font-size:14pt;margin-bottom:10px;">
+                    <button type="submit" style="width:300px;height:30px;font-size:14pt;">Send!</button>
+                </div> 
+            </form>
+    
+            <p>${comment}</p>
+                
+        </div>
+        </center>
+</p>
+</main>

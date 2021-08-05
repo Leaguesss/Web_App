@@ -1,0 +1,90 @@
+<link rel="stylesheet" type="text/css" href="css/content.css">
+<main id = "main">
+<p>
+    <div class="content_page">
+        <div class="title">
+            <div class="picture" style="background: url(img/background2.jpg);
+            background-size: 100% 100%;
+            height: 300px;
+            text-align: center;"></div>
+            <div class="container">
+                <h1>Bottle</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainBox">
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/intro.svg" width="128" height="96" alt="introduction icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Introdunction</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <p align="left">Bottle is a light-weight web framework for python, and offers request dispatching (routes) with URL parameter support, templates, a built-in web server and adapters for many third-party WSGI/HTTP-server and template engines.</p>
+                    </br>
+                    <p align="left">As a sophomore year student, you should already have learnt python last year, and able to understand the following short tutorial which introduce how to make a simple website.</p>
+                    </br>
+                </div>
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/learning.svg" width="128" height="96" alt="learning icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Learning</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <h3>Here are some very basic concept for Bottle framework:</h3>
+                    </br>
+                    <p align="left">Routing: Requests to function-call mapping with support for clean and dynamic URLs.
+                            Templates: Fast and pythonic built-in template engine and support for mako, jinja2 and cheetah templates.
+                            Utilities: Convenient access to form data, file uploads, cookies, headers and other HTTP-related metadata.
+                            Server: Built-in HTTP development server and support for paste, bjoern, gae, cherrypy or any other WSGI capable HTTP server.</p>
+                    </br>
+                </div>
+                <div class="BottleCode">
+                    <img src="img/bottle_tutorial.jpg" width="300" height="120" alt="bottle tutorial icon"/>
+                </div>
+                <div class="sentenses">
+                    <p align="left">Run this script or paste it into a Python console, then point your browser to http://localhost:8080/hello/world. </br>
+                            Now you already can make a new website! To learn more about bottle, you can access https://bottlepy.org/docs/dev/ which is the official tutorial of it.</p>
+                    </br>
+                    </br>
+                    <h3>Here is a short youtube video to introduce bottle:</h3>
+                </div>
+                <div class="Video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/g_9nsFJS_pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="container">
+                    <div class="left_column">
+                        <img src="img/reference.svg" width="128" height="96" alt= "reference icon"/>
+                    </div>
+                    <div class="right_column">
+                        <h2>Reference</h2>
+                    </div>
+                </div>
+                <div class="sentenses">
+                    <a href="https://bottlepy.org/docs/dev/tutorial.html">https://bottlepy.org/docs/dev/tutorial.html</a></br>
+                    <a href="https://en.wikipedia.org/wiki/Bottle_(web_framework)">https://en.wikipedia.org/wiki/Bottle_(web_framework)</a></br>
+                    <a href="https://www.youtube.com/watch?v=g_9nsFJS_pk">https://www.youtube.com/watch?v=g_9nsFJS_pk</a></br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+    <div class="message-content">
+        <form id="sendmessage" action="" method="post">  
+            <div class="field">
+                <h2>Comment:</h2> <input type="text" name = "comment" style="width:500px;height:30px;font-size:14pt;margin-bottom:10px;">
+                <button type="submit" style="width:300px;height:30px;font-size:14pt;">Send!</button>
+            </div> 
+        </form>
+
+        <p>${comment}</p>  
+    </div>
+    </center>
+</p>
+</main>

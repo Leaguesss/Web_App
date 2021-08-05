@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+    #defind our individual services
+
+  ilearning:
+    #build the ilearning services using the dockerfile in the ilearning directory.
+    build: ./ilearning
+
+    #give our ilearning container a name
+    container_name: ilearning
+
+    #Instruct docker to always restart the service
+    restart: always
+
+
+    #any ports listed using expose will only be accessible to internet
+    #uWSFI will serving our ilearning app on port 8080
+    expose:
+      - 8080
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+
+    #allow us to map ports on the host machine to container itself
+    #host:container
+    #request will come out side to port 80 on the host machine, then it will going to pass to port 80 on our nginx container.
+    #in the nginx conf we are listening port 80
+    ports:
+      - "80:80"
+      - "443:443"
